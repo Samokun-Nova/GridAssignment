@@ -1,0 +1,18 @@
+export const range = (start, end, step = 1) => {
+  let output = [];
+  // solve this range utility
+  if (end === undefined) {
+    end = start;
+    start = 0;
+  };
+
+  // handle scenario where end is not specified range(5) - [0, 1, 2, 3, 4]
+  // a conditional check for end
+
+  for (let i = start; i < end; i += step) {
+    output.push(i);
+    // loop code
+  }
+
+  return output;
+};
